@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CiberNaut Junior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="juego.css">
+    <link rel="stylesheet" href="sandboxx.css">
+</head>
+<body>
+<div id="pantallaInicio" class="pantalla-inicio">
+    <h1>🎮 CiberNaut Kids</h1>
+    <button id="btnComenzar">Comenzar</button>
+</div>
+<nav class="menu">
+    <div class="menu-left">
+        <img src="./images/superior.jpeg" alt="CiberNaut" class="logo-img">
+        <span class="logo-text">Ciberseguridad Kids</span>
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html" >Inicio</a>
+        <a href="padres.html">Padres</a>
+        <a href="juego.html"class="active">Kids</a>
+    </div>
+</nav>
+<div class="juego-container">
+    <div class="control-audio">
+    🔊
+    <input type="range" id="controlVolumen" min="0" max="1" step="0.01" value="0.3">
+</div>
+    <h1>🎮 CiberNaut Junior</h1>
+    <div class="personaje" id="personaje">🤖</div>
+    <p id="pregunta">Cargando misión...</p>
+
+    <div class="opciones" id="opciones"></div>
+
+    <div class="resultado" id="resultado"></div>
+    <div class="progreso" id="progreso"></div>
+
+    <div class="barra">
+        <div class="barra-interna" id="barra"></div>
+    </div>
+    <button id="reiniciarBtn" class="reiniciar oculto">🔄 Reiniciar Juego</button>
+</div>
+
+<audio id="musicaFondo" src="sonidos/musica.mp3" loop></audio>
+<!-- Enlace al JS -->
+<script src="juego.js"></script>
+
+</body>
+</html>

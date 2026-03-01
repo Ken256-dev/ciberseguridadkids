@@ -1,0 +1,164 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.juego-container{
+    width:90%;
+    max-width:800px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,255,200,0.4);
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.opciones button{
+    display:block;
+    width:100%;
+    margin:15px 0;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background: linear-gradient(45deg,#00ffc3,#00aaff);
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    color:#000;
+}
+
+.opciones button:hover{
+    transform:scale(1.05);
+}
+
+.resultado{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.progreso{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.barra{
+    width:100%;
+    height:15px;
+    background:rgba(255,255,255,0.2);
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.barra-interna{
+    height:100%;
+    width:0%;
+    background: linear-gradient(90deg,#00ffc3,#00ff88);
+    transition:0.5s;
+}
+
+.final{
+    font-size:22px;
+    animation: aparecer 1s ease-in-out;
+}
+
+.medalla{
+    font-size:60px;
+    margin:20px 0;
+}
+
+@keyframes aparecer{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+.personaje{
+    font-size:70px;
+    margin-bottom:20px;
+    transition:0.5s;
+}
+
+.feliz{
+    transform: scale(1.2) rotate(5deg);
+}
+
+.triste{
+    transform: scale(0.9) rotate(-5deg);
+}
+
+.reiniciar{
+    margin-top:20px;
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background: linear-gradient(45deg,#ffcc00,#ff8800);
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.reiniciar:hover{
+    transform:scale(1.05);
+}
+
+.oculto{
+    display:none;
+}
+.pantalla-inicio{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.pantalla-inicio button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#00ffc3,#00aaff);
+}
+#btnAudio{
+    position:absolute;
+    top:20px;
+    right:20px;
+    padding:8px 12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.control-audio{
+    position:absolute;
+    top:20px;
+    right:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+}
+
+#controlVolumen{
+    width:100px;
+    cursor:pointer;
+}
+.juego-container{
+    position:relative;
+}
+.juego-container{
+    margin:120px auto 60px auto; /* espacio para navbar */
+}
